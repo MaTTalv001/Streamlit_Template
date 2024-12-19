@@ -1,6 +1,3 @@
-その場合、README とプロジェクト構造を以下のように更新するのがよいでしょう。
-
-```markdown
 # Streamlit Application Template
 
 ## 概要
@@ -13,6 +10,7 @@
 - Docker Compose
 
 ## プロジェクト構造
+
 ```
 
 .
@@ -34,15 +32,17 @@
 │ └── processed/ # 処理済みデータ
 └── tests/ # テストコード
 
-````
+```
 
 ## セットアップと実行
 
 ### 環境変数の設定
+
 1. `.streamlit/secrets.toml.template`をコピーして`.streamlit/secrets.toml`を作成します：
+
 ```bash
 cp .streamlit/secrets.toml.template .streamlit/secrets.toml
-````
+```
 
 2. `.streamlit/secrets.toml`を編集して必要な環境変数を設定します。
    このファイルは`.gitignore`に含まれており、機密情報を安全に管理できます。
